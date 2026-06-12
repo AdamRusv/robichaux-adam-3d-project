@@ -32,54 +32,221 @@ input_forward = "move_forward"
 input_back = "move_backward"
 input_jump = "jump"
 
-[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=262669800]
+[node name="Blockout" type="CSGCombiner3D" parent="." unique_id=262669800]
 use_collision = true
 
-[node name="Floor" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1471673476]
+[node name="holder temp" type="CSGBox3D" parent="Blockout" unique_id=1513167933]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
+
+[node name="Floor" type="CSGBox3D" parent="Blockout" unique_id=1471673476]
 size = Vector3(50, 1, 50)
 
-[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGCombiner3D" unique_id=1552141310]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -6)
-radius = 1.827
-radial_segments = 16
-rings = 8
+[node name="Walls" type="CSGBox3D" parent="Blockout" unique_id=2058919000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGCombiner3D" unique_id=798969596]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, 5)
-radius = 2.205
+[node name="CSGBox3D" type="CSGBox3D" parent="Blockout/Walls" unique_id=1307365379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.5, 24.5)
+size = Vector3(50, 18, 1)
 
-[node name="Wall" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1185039436]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1549997, 3, 6.5)
-size = Vector3(10, 5, 1)
+[node name="CSGBox3D2" type="CSGBox3D" parent="Blockout/Walls" unique_id=754666104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.5, -24.5)
+size = Vector3(50, 18, 1)
 
-[node name="Wall5" type="CSGBox3D" parent="CSGCombiner3D/Wall" unique_id=1444997587]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.75, 0)
+[node name="CSGBox3D3" type="CSGBox3D" parent="Blockout/Walls" unique_id=494864036]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.5, 14.5, 0)
+size = Vector3(1, 18, 48)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Blockout/Walls" unique_id=500840587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.5, 14.5, 0)
+size = Vector3(1, 18, 48)
+
+[node name="Ramps" type="CSGBox3D" parent="Blockout" unique_id=589544360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Blockout/Ramps" unique_id=1282364679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 19)
+size = Vector3(48, 3, 10)
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Blockout/Ramps" unique_id=1245772302]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16, 6.5, 14)
+polygon = PackedVector2Array(0, 0, 0, 3, 16, 0)
+depth = 8.0
+
+[node name="CSGPolygon3D2" type="CSGPolygon3D" parent="Blockout/Ramps" unique_id=1628861002]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24, 6.5, 14)
+polygon = PackedVector2Array(0, 0, 0, 3, 16, 0)
+depth = 8.0
+
+[node name="Ramp House" type="CSGBox3D" parent="Blockout" unique_id=1915116875]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
+
+[node name="arch" type="CSGBox3D" parent="Blockout/Ramp House" unique_id=626578923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 12, 19)
+size = Vector3(1, 5, 10)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Blockout/Ramp House/arch" unique_id=981753343]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 operation = 2
-size = Vector3(4, 5, 2)
+size = Vector3(2, 3, 2)
 
-[node name="Wall3" type="CSGBox3D" parent="CSGCombiner3D" unique_id=954570368]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1549997, 3, 15.5)
-size = Vector3(10, 5, 1)
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Blockout/Ramp House/arch" unique_id=1973430585]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.0625, 0.5, 0)
+operation = 2
+radius = 1.0
+height = 1.625
+sides = 16
 
-[node name="Wall2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=151404664]
-transform = Transform3D(2.9802322e-08, 0, 1, 0, 1, 0, -1, 0, 2.9802322e-08, 9.655, 3, 11)
-size = Vector3(10, 5, 1)
+[node name="arch2" type="CSGBox3D" parent="Blockout/Ramp House" unique_id=411092400]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 12, 19)
+size = Vector3(1, 5, 10)
 
-[node name="Wall4" type="CSGBox3D" parent="CSGCombiner3D" unique_id=199675927]
-transform = Transform3D(2.9802322e-08, 0, 1, 0, 1, 0, -1, 0, 2.9802322e-08, -1.3450003, 3, 11)
-size = Vector3(10, 5, 1)
+[node name="CSGBox3D" type="CSGBox3D" parent="Blockout/Ramp House/arch2" unique_id=1811722294]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+operation = 2
+size = Vector3(2, 3, 2)
 
-[node name="CSGTorus3D" type="CSGTorus3D" parent="CSGCombiner3D" unique_id=301904876]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5, 2, -7)
-inner_radius = 3.095
-outer_radius = 3.805
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Blockout/Ramp House/arch2" unique_id=1051872239]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, -0.0625, 0.5, 0)
+operation = 2
+radius = 1.0
+height = 1.625
+sides = 16
 
-[node name="CSGPolygon3D" type="CSGPolygon3D" parent="CSGCombiner3D" unique_id=32280004]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -1)
-polygon = PackedVector2Array(0.37965775, -0.9357705, 0.33968735, 0.66609836, 1.2248402, 0.7643702, 1.3223715, 1.4878635, 2.1525335, 1.4965034, 1.7282715, -0.9458749)
-mode = 1
-spin_degrees = 360.0
-spin_sides = 8
+[node name="CSGBox3D3" type="CSGBox3D" parent="Blockout/Ramp House" unique_id=415230053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 14.5)
+size = Vector3(19, 5, 1)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1562251626]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 2, 8.5)
+[node name="CSGBox3D4" type="CSGBox3D" parent="Blockout/Ramp House" unique_id=878784939]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 19)
+size = Vector3(21, 1, 10)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Blockout/Ramp House" unique_id=2120645842]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 23.5)
+size = Vector3(19, 5, 1)
+
+[node name="Wings" type="CSGBox3D" parent="Blockout" unique_id=1722285912]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
+
+[node name="left platform" type="CSGBox3D" parent="Blockout/Wings" unique_id=798435215]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.375, 15, -13.5)
+size = Vector3(9.25, 1, 21)
+
+[node name="left ramp" type="CSGPolygon3D" parent="Blockout/Wings" unique_id=1604772198]
+transform = Transform3D(-1, 0, 2.6226832e-07, 0, 1, 0, -2.6226832e-07, 0, -1, -8.25, 6.5, -24)
+polygon = PackedVector2Array(-4, 4.5, 6.5, 9, 6.5, 0, -4, 0)
+depth = 8.0
+
+[node name="center ramp" type="CSGPolygon3D" parent="Blockout/Wings" unique_id=905024302]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 3.7499995, 2, -9.5)
+polygon = PackedVector2Array(-5, 4.5, 6.5, 9, 14.5, 9, 14.5, 4.5, 6.5, 4.5)
+depth = 8.0
+
+[node name="right ramp" type="CSGPolygon3D" parent="Blockout/Wings" unique_id=2052496735]
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 7.7499995, 6.5, -16)
+polygon = PackedVector2Array(-4, 4.5, 6.5, 9, 6.5, 0, -4, 0)
+depth = 8.0
+
+[node name="right platform" type="CSGBox3D" parent="Blockout/Wings" unique_id=107873510]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 19, 15, -13.5)
+size = Vector3(9.5, 1, 21)
+
+[node name="center vertical" type="CSGBox3D" parent="Blockout/Wings" unique_id=253715353]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.7484555e-07, 15, 5.5)
+size = Vector3(9.5, 1, 17)
+
+[node name="center horizonal" type="CSGBox3D" parent="Blockout/Wings" unique_id=1371743348]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 15, -7.5)
+size = Vector3(30, 1, 9)
+
+[node name="Lighting" type="CSGBox3D" parent="Blockout" unique_id=1408270708]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -6, 0)
+
+[node name="torch" type="CSGBox3D" parent="Blockout/Lighting" unique_id=1702303685]
+transform = Transform3D(0.8660254, -0.5, 0, 0.5, 0.8660254, 0, 0, 0, 1, -10.625, 11.783493, 20.5)
+size = Vector3(0.25, 1.5, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch" unique_id=883596993]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22022152, 1.0833321, 0)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
+
+[node name="torch2" type="CSGBox3D" parent="Blockout/Lighting" unique_id=854004651]
+transform = Transform3D(0.8660254, -0.5, 0, 0.5, 0.8660254, 0, 0, 0, 1, -10.625, 11.783493, 17.5)
+size = Vector3(0.25, 1.5, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch2" unique_id=908195689]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22022152, 1.0833321, 0)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
+
+[node name="torch7" type="CSGBox3D" parent="Blockout/Lighting" unique_id=1855768920]
+transform = Transform3D(0.8660254, -0.5, 0, 0.5, 0.8660254, 0, 0, 0, 1, 9.375, 11.783493, 20.5)
+size = Vector3(0.25, 1.5, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch7" unique_id=544121]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22022152, 1.0833321, 0)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
+
+[node name="torch8" type="CSGBox3D" parent="Blockout/Lighting" unique_id=1844649731]
+transform = Transform3D(0.8660254, -0.5, 0, 0.5, 0.8660254, 0, 0, 0, 1, 9.375, 11.783493, 17.5)
+size = Vector3(0.25, 1.5, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch8" unique_id=2098825959]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22022152, 1.0833321, 0)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
+
+[node name="torch3" type="CSGBox3D" parent="Blockout/Lighting" unique_id=600499549]
+transform = Transform3D(-0.8660254, 0.5, 8.742278e-08, 0.5, 0.8660254, 0, -7.5710346e-08, 4.371139e-08, -1, 10.587429, 11.783493, 17.5)
+size = Vector3(0.25, 1.5, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch3" unique_id=2098939155]
+transform = Transform3D(1, -3.3094043e-15, 0, -3.3094043e-15, 1, 0, 0, 0, 1, 0.22022152, 1.0833321, 1.9073486e-06)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
+
+[node name="torch4" type="CSGBox3D" parent="Blockout/Lighting" unique_id=506031004]
+transform = Transform3D(-0.8660254, 0.5, 8.742278e-08, 0.5, 0.8660254, 0, -7.5710346e-08, 4.371139e-08, -1, 10.587429, 11.783493, 20.5)
+size = Vector3(0.25, 1.5, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch4" unique_id=1758248415]
+transform = Transform3D(1, -3.3094043e-15, 0, -3.3094043e-15, 1, 0, 0, 0, 1, 0.22022152, 1.0833321, 3.8146973e-06)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
+
+[node name="torch5" type="CSGBox3D" parent="Blockout/Lighting" unique_id=1505003176]
+transform = Transform3D(-0.8660254, 0.5, 8.742278e-08, 0.5, 0.8660254, 0, -7.5710346e-08, 4.371139e-08, -1, -9.324219, 11.783493, 17.5)
+size = Vector3(0.25, 1.5, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch5" unique_id=2143655329]
+transform = Transform3D(1, -3.3094043e-15, 0, -3.3094043e-15, 1, 0, 0, 0, 1, 0.22022152, 1.0833321, 1.9073486e-06)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
+
+[node name="torch6" type="CSGBox3D" parent="Blockout/Lighting" unique_id=326920747]
+transform = Transform3D(-0.8660254, 0.5, 8.742278e-08, 0.5, 0.8660254, 0, -7.5710346e-08, 4.371139e-08, -1, -9.324219, 11.783493, 20.5)
+size = Vector3(0.25, 1.5, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch6" unique_id=886181133]
+transform = Transform3D(1, -3.3094043e-15, 0, -3.3094043e-15, 1, 0, 0, 0, 1, 0.22022152, 1.0833321, 3.8146973e-06)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
+
+[node name="torch9" type="CSGBox3D" parent="Blockout/Lighting" unique_id=266580575]
+transform = Transform3D(-1, 0, 7.5710346e-08, 0, 1, 4.371139e-08, -7.5710346e-08, 4.371139e-08, -1, 0, 10.533, 16.566)
+size = Vector3(0.25, 2, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch9" unique_id=1730951385]
+transform = Transform3D(1, 6.6188086e-15, 0, -3.3094043e-15, 1, 0, 0, 0, 1, -0.005407095, 1.0833321, 3.8146973e-06)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
+
+[node name="torch10" type="CSGBox3D" parent="Blockout/Lighting" unique_id=643992189]
+transform = Transform3D(-1, 0, 7.5710346e-08, 0, 1, 4.371139e-08, -7.5710346e-08, 4.371139e-08, -1, 0, 10.533, 21.566)
+size = Vector3(0.25, 2, 0.25)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Blockout/Lighting/torch10" unique_id=1076336221]
+transform = Transform3D(1, 6.6188086e-15, 0, -3.3094043e-15, 1, 0, 0, 0, 1, -0.005407095, 1.0833321, 3.8146973e-06)
+light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
+omni_range = 3.0
