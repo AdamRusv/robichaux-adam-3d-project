@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cgtovqfkjbybf"]
+
+[ext_resource type="PackedScene" uid="uid://deyxvk4haeeqx" path="res://assets/brackeys_3d_game_assets/dungeon_assets/building/wall_window_closed.glb" id="1_2og4w"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ao7id"]
+size = Vector3(4, 0.5, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5f3jb"]
+size = Vector3(4, 0.8, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g3k0p"]
+size = Vector3(4, 2.7, 0.5)
+
+[node name="wall window closed" type="StaticBody3D" unique_id=1384606065]
+
+[node name="wall_window_closed2" parent="." unique_id=2098686488 instance=ExtResource("1_2og4w")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1237069465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+shape = SubResource("BoxShape3D_ao7id")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=100250501]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.6, 0)
+shape = SubResource("BoxShape3D_5f3jb")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=451030743]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.85, 0)
+shape = SubResource("BoxShape3D_g3k0p")

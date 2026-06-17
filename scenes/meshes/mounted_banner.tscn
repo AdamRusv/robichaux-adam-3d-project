@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://d4g0rei53yhh5"]
+
+[ext_resource type="PackedScene" uid="uid://bxfbclf6dm1rc" path="res://assets/brackeys_3d_game_assets/dungeon_assets/props/banner_mounted.glb" id="1_xqjhj"]
+
+[node name="mounted banner" type="Node3D" unique_id=263496606]
+
+[node name="banner_mounted" parent="." unique_id=924490596 instance=ExtResource("1_xqjhj")]

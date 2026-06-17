@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cp4rp4iwyvk73"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_bpt1m"]
+[ext_resource type="PackedScene" uid="uid://covo8gysc4lac" path="res://scenes/meshes/ceiling.tscn" id="2_4lj41"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_bpt1m"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -115,10 +116,6 @@ sides = 16
 [node name="CSGBox3D3" type="CSGBox3D" parent="Blockout/Ramp House" unique_id=415230053]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 14.5)
 size = Vector3(19, 5, 1)
-
-[node name="CSGBox3D4" type="CSGBox3D" parent="Blockout/Ramp House" unique_id=878784939]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 19)
-size = Vector3(21, 1, 10)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Blockout/Ramp House" unique_id=2120645842]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 23.5)
@@ -250,3 +247,9 @@ size = Vector3(0.25, 2, 0.25)
 transform = Transform3D(1, 6.6188086e-15, 0, -3.3094043e-15, 1, 0, 0, 0, 1, -0.005407095, 1.0833321, 3.8146973e-06)
 light_color = Color(0.5833256, 0.35571384, 3.85046e-07, 1)
 omni_range = 3.0
+
+[node name="Ceiling" parent="." unique_id=544897850 instance=ExtResource("2_4lj41")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 17)
+
+[node name="Ceiling3" parent="." unique_id=1746042897 instance=ExtResource("2_4lj41")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8, 21)

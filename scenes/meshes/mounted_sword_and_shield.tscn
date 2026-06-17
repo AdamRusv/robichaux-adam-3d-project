@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://drx2nl7fm3lb4"]
+
+[ext_resource type="PackedScene" uid="uid://bsao5ixjfpx0" path="res://assets/brackeys_3d_game_assets/dungeon_assets/props/sword_shield.glb" id="1_qgbgk"]
+
+[node name="mounted sword and shield" type="Node3D" unique_id=391247822]
+
+[node name="sword_shield" parent="." unique_id=479016470 instance=ExtResource("1_qgbgk")]
