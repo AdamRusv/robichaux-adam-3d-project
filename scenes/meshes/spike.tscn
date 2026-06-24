@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c3wnvbu0lxv1d"]
+
+[ext_resource type="PackedScene" uid="uid://bfwijnrphvoen" path="res://assets/my assets/custom model.glb" id="1_yf43y"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_86my5"]
+size = Vector3(0.4, 2.75, 0.4)
+
+[node name="Spike" type="StaticBody3D" unique_id=777969256]
+
+[node name="custom model" parent="." unique_id=1149624523 instance=ExtResource("1_yf43y")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1749558726]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4703484e-08, 1.375, 1.4901161e-08)
+shape = SubResource("BoxShape3D_86my5")

@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b8n13durfg037" path="res://scenes/meshes/tsplit_wall.tscn" id="9_llcge"]
 [ext_resource type="PackedScene" uid="uid://b5hvg7gtkface" path="res://scenes/meshes/pillar.tscn" id="10_lwi15"]
 [ext_resource type="PackedScene" uid="uid://hqxs5yta8uyl" path="res://scenes/meshes/mounted_torch.tscn" id="11_e6mo4"]
+[ext_resource type="PackedScene" uid="uid://c3wnvbu0lxv1d" path="res://scenes/meshes/spike.tscn" id="12_px6rj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_bpt1m"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -1700,118 +1701,166 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -26,
 [node name="Wing Step" type="Node3D" parent="." unique_id=79840148]
 
 [node name="stone floor21" parent="Wing Step" unique_id=1545949733 instance=ExtResource("7_1b6n0")]
-transform = Transform3D(-1, 2.262668e-08, -8.444392e-08, 0, 0.96592593, 0.25881907, 8.7422784e-08, 0.25881907, -0.96592593, -4.4626114e-07, 3.5873976, -20.109264)
+transform = Transform3D(-1, 2.262668e-08, -8.444392e-08, 0, 0.96592593, 0.25881907, 8.7422784e-08, 0.25881907, -0.96592593, -4.4626114e-07, 3.5873976, -11.609264)
 
 [node name="stone floor22" parent="Wing Step" unique_id=1366335891 instance=ExtResource("7_1b6n0")]
-transform = Transform3D(-1, 2.262668e-08, -8.444392e-08, 0, 0.96592593, 0.25881907, 8.7422784e-08, 0.25881907, -0.96592593, -1.08365185e-07, 2.552301, -16.244184)
+transform = Transform3D(-1, 2.262668e-08, -8.444392e-08, 0, 0.96592593, 0.25881907, 8.7422784e-08, 0.25881907, -0.96592593, -1.08365185e-07, 2.552301, -7.7441845)
 
 [node name="stone floor23" parent="Wing Step" unique_id=1658723709 instance=ExtResource("7_1b6n0")]
-transform = Transform3D(-1, 2.262668e-08, -8.444392e-08, 0, 0.96592593, 0.25881907, 8.7422784e-08, 0.25881907, -0.96592593, 2.2915249e-07, 1.5172482, -12.383432)
+transform = Transform3D(-1, 2.262668e-08, -8.444392e-08, 0, 0.96592593, 0.25881907, 8.7422784e-08, 0.25881907, -0.96592593, 2.2915249e-07, 1.5172482, -3.8834324)
 
 [node name="stone floor24" parent="Wing Step" unique_id=753795073 instance=ExtResource("7_1b6n0")]
-transform = Transform3D(-1, 2.262668e-08, -8.444392e-08, 0, 0.96592593, 0.25881907, 8.7422784e-08, 0.25881907, -0.96592593, 5.657301e-07, 0.48670417, -8.533434)
+transform = Transform3D(-1, 2.262668e-08, -8.444392e-08, 0, 0.96592593, 0.25881907, 8.7422784e-08, 0.25881907, -0.96592593, 5.657301e-07, 0.48670417, -0.033433914)
 
 [node name="Pillar21" parent="Wing Step" unique_id=1171041792 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.0000007, 0.5, -22.009264)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.0000007, 0.5, -13.509264)
 
 [node name="Pillar22" parent="Wing Step" unique_id=1459754314 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -2.0000002, 2.6999998, -17.909264)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -2.0000002, 2.6999998, -9.409264)
 
 [node name="Pillar23" parent="Wing Step" unique_id=1221422047 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999999, 1.6790779, -14.109262)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999999, 1.6790779, -5.6092625)
 
 [node name="Pillar24" parent="Wing Step" unique_id=970317412 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999996, 0.643376, -10.259264)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999996, 0.643376, -1.759264)
 
 [node name="Pillar25" parent="Wing Step" unique_id=865749440 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999993, -0.39897108, -6.4092636)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999993, -0.39897108, 2.0907364)
 
 [node name="wall19" parent="Wing Step" unique_id=1562301272 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -2.0000005, -0.5, -20.509264)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -2.0000005, -0.5, -12.009264)
 
 [node name="wall20" parent="Wing Step" unique_id=1217054276 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -2.0000002, -1.5, -16.659264)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -2.0000002, -1.5, -8.159264)
 
 [node name="wall21" parent="Wing Step" unique_id=568417592 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -1.9999998, -2.5, -12.859262)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -1.9999998, -2.5, -4.3592625)
 
 [node name="Pillar26" parent="Wing Step" unique_id=1162112065 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.9999994, 0.5, -22.009264)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.9999994, 0.5, -13.509264)
 
 [node name="Pillar27" parent="Wing Step" unique_id=106532003 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 1.9999998, 2.6999998, -17.909264)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 1.9999998, 2.6999998, -9.409264)
 
 [node name="Pillar28" parent="Wing Step" unique_id=1851331418 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2, 1.6790779, -14.109263)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2, 1.6790779, -5.6092634)
 
 [node name="Pillar29" parent="Wing Step" unique_id=628390611 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2.0000005, 0.643376, -10.259264)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2.0000005, 0.643376, -1.759264)
 
 [node name="Pillar30" parent="Wing Step" unique_id=356041946 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2.0000007, -0.39897108, -6.4092636)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2.0000007, -0.39897108, 2.0907364)
 
 [node name="wall22" parent="Wing Step" unique_id=2083933254 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 1.9999995, -0.5, -20.509264)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 1.9999995, -0.5, -12.009264)
 
 [node name="wall23" parent="Wing Step" unique_id=1288981091 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 1.9999999, -1.5, -16.659264)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 1.9999999, -1.5, -8.159264)
 
 [node name="wall24" parent="Wing Step" unique_id=232194268 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 2.0000002, -2.5, -12.859263)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 2.0000002, -2.5, -4.3592634)
 
 [node name="Pillar31" parent="Wing Step" unique_id=632901466 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.0000007, 0.5, -22.009264)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.0000007, 0.5, -13.509264)
 
 [node name="Pillar32" parent="Wing Step" unique_id=2017138 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -2.0000002, 2.6999998, -17.909264)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -2.0000002, 2.6999998, -9.409264)
 
 [node name="Pillar33" parent="Wing Step" unique_id=1776679641 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999999, 1.6790779, -14.109262)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999999, 1.6790779, -5.6092625)
 
 [node name="Pillar34" parent="Wing Step" unique_id=1700398137 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999996, 0.643376, -10.259264)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999996, 0.643376, -1.759264)
 
 [node name="Pillar35" parent="Wing Step" unique_id=2054379642 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999993, -0.39897108, -6.4092636)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, -1.9999993, -0.39897108, 2.0907364)
 
 [node name="wall25" parent="Wing Step" unique_id=366589662 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -2.0000005, -0.5, -20.509264)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -2.0000005, -0.5, -12.009264)
 
 [node name="wall26" parent="Wing Step" unique_id=207681633 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -2.0000002, -1.5, -16.659264)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -2.0000002, -1.5, -8.159264)
 
 [node name="wall27" parent="Wing Step" unique_id=839279763 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -1.9999998, -2.5, -12.859262)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, -1.9999998, -2.5, -4.3592625)
 
 [node name="Pillar36" parent="Wing Step" unique_id=2094437185 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.9999994, 0.5, -22.009264)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.9999994, 0.5, -13.509264)
 
 [node name="Pillar37" parent="Wing Step" unique_id=1451370361 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 1.9999998, 2.6999998, -17.909264)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 1.9999998, 2.6999998, -9.409264)
 
 [node name="Pillar38" parent="Wing Step" unique_id=381624283 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2, 1.6790779, -14.109263)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2, 1.6790779, -5.6092634)
 
 [node name="Pillar39" parent="Wing Step" unique_id=333577546 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2.0000005, 0.643376, -10.259264)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2.0000005, 0.643376, -1.759264)
 
 [node name="Pillar40" parent="Wing Step" unique_id=1790816080 instance=ExtResource("10_lwi15")]
-transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2.0000007, -0.39897108, -6.4092636)
+transform = Transform3D(-1, -8.444392e-08, -2.2626674e-08, 0, 0.25881898, -0.9659258, 8.742278e-08, -0.9659258, -0.25881898, 2.0000007, -0.39897108, 2.0907364)
 
 [node name="wall28" parent="Wing Step" unique_id=418085604 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 1.9999995, -0.5, -20.509264)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 1.9999995, -0.5, -12.009264)
 
 [node name="wall29" parent="Wing Step" unique_id=850276336 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 1.9999999, -1.5, -16.659264)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 1.9999999, -1.5, -8.159264)
 
 [node name="wall30" parent="Wing Step" unique_id=968723173 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 2.0000002, -2.5, -12.859263)
+transform = Transform3D(1.281553e-07, 2.2626681e-08, -1, -0.25881907, 0.96592593, -1.13133405e-08, 0.96592593, 0.25881907, 1.2964475e-07, 2.0000002, -2.5, -4.3592634)
 
 [node name="wall" parent="Wing Step" unique_id=542042747 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2, 0.5, -24)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2, 0.5, -15.5)
 
 [node name="wall2" parent="Wing Step" unique_id=678799303 instance=ExtResource("4_qgxqk")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2, 0.5, -24)
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2, 0.5, -15.5)
 
 [node name="stone floor" parent="Wing Step" unique_id=92803632 instance=ExtResource("7_1b6n0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.1, -24)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.1, -15.5)
+
+[node name="wall3" parent="Wing Step" unique_id=1965667309 instance=ExtResource("4_qgxqk")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2, 0.5, -23.5)
+
+[node name="wall4" parent="Wing Step" unique_id=1234092878 instance=ExtResource("4_qgxqk")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2, 0.5, -23.5)
+
+[node name="wall5" parent="Wing Step" unique_id=1059761359 instance=ExtResource("4_qgxqk")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -2, 0.5, -19.5)
+
+[node name="wall6" parent="Wing Step" unique_id=778428796 instance=ExtResource("4_qgxqk")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 2, 0.5, -19.5)
+
+[node name="wall7" parent="Wing Step" unique_id=1572858609 instance=ExtResource("4_qgxqk")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 8.742278e-08, 0.5, -21.5)
+
+[node name="wall8" parent="Wing Step" unique_id=948929738 instance=ExtResource("4_qgxqk")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -8.742278e-08, 0.5, -17.5)
+
+[node name="stone floor2" parent="Wing Step" unique_id=588234712 instance=ExtResource("7_1b6n0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.1, -23.5)
+
+[node name="Spike" parent="Wing Step" unique_id=777969256 instance=ExtResource("12_px6rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -20.550001)
+
+[node name="Spike2" parent="Wing Step" unique_id=1717655020 instance=ExtResource("12_px6rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -20.550001)
+
+[node name="Spike3" parent="Wing Step" unique_id=1115742613 instance=ExtResource("12_px6rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, -20.550001)
+
+[node name="Spike4" parent="Wing Step" unique_id=1359756093 instance=ExtResource("12_px6rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -19.550001)
+
+[node name="Spike5" parent="Wing Step" unique_id=289042523 instance=ExtResource("12_px6rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -19.550001)
+
+[node name="Spike6" parent="Wing Step" unique_id=2032424409 instance=ExtResource("12_px6rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, -19.550001)
+
+[node name="Spike7" parent="Wing Step" unique_id=85341306 instance=ExtResource("12_px6rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.5, -18.550001)
+
+[node name="Spike8" parent="Wing Step" unique_id=140274499 instance=ExtResource("12_px6rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -18.550001)
+
+[node name="Spike9" parent="Wing Step" unique_id=482264310 instance=ExtResource("12_px6rj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.5, -18.550001)
