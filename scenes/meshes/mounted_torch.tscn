@@ -5,6 +5,41 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_v7ymp"]
 size = Vector3(0.4, 1, 0.5)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v7ymp"]
+shading_mode = 0
+vertex_color_use_as_albedo = true
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+stencil_flags = 2
+
+[sub_resource type="Gradient" id="Gradient_c1fxt"]
+offsets = PackedFloat32Array(0, 0.33333334, 0.6666667, 1)
+colors = PackedColorArray(0.81960785, 0.7058824, 0.47058824, 1, 0.99215686, 0.7607843, 0.007843138, 1, 0.8235294, 0.3764706, 0.09803922, 1, 0.5176471, 0.11372549, 0, 1)
+metadata/_snap_enabled = true
+metadata/_snap_count = 3
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_v7ymp"]
+gradient = SubResource("Gradient_c1fxt")
+
+[sub_resource type="Curve" id="Curve_c1fxt"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -3.0600915, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_v7ymp"]
+curve = SubResource("Curve_c1fxt")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_c1fxt"]
+gravity = Vector3(0, 1, 0)
+scale_max = 2.0
+scale_curve = SubResource("CurveTexture_v7ymp")
+color_ramp = SubResource("GradientTexture1D_v7ymp")
+
+[sub_resource type="QuadMesh" id="QuadMesh_ijqre"]
+size = Vector2(0.2, 0.2)
+
 [node name="mounted torch" type="StaticBody3D" unique_id=1584528256]
 
 [node name="torch_mounted2" parent="." unique_id=383105080 instance=ExtResource("1_c1fxt")]
@@ -16,3 +51,10 @@ shape = SubResource("BoxShape3D_v7ymp")
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=891559383]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0.45)
 light_color = Color(0.9268246, 0.5326579, 0, 1)
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1129619025]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.3)
+material_override = SubResource("StandardMaterial3D_v7ymp")
+amount = 6
+process_material = SubResource("ParticleProcessMaterial_c1fxt")
+draw_pass_1 = SubResource("QuadMesh_ijqre")
